@@ -2,6 +2,7 @@ module.exports = {
   extends: [
     './common',
     './typescript',
-    './react'
+    './react',
+    './sonarjs'
   ],
 }

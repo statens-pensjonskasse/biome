@@ -1,7 +1,12 @@
 module.exports = {
+  extends:[
+    'plugin:prettier/recommended'
+  ],
+  plugins: ['prettier'],
   rules: {
     semi: [2, "always"],
-    'no-console': 2,
+    'no-console': 'error',
+    'linebreak-style': ['error', 'unix'],
     'no-restricted-imports': [
       'error',
       {
