@@ -1,6 +1,6 @@
 {
   "name": "@spk/eslint-config",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -12,6 +12,11 @@
   },
   "author": "",
   "license": "ISC",
+  "always-auth": true,
+  "user": "sa-npm",
+  "publishConfig": {
+    "registry": "http://nexus/content/repositories/spk-npm/"
+  },
   "peerDependencies": {
     "eslint": ">=6",
     "typescript": "^4.x.x",
@@ -24,7 +29,8 @@
   },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^4.9.0",
-    "@typescript-eslint/parser": "^4.9.0"
+    "@typescript-eslint/parser": "^4.9.0",
+    "eslint-config-prettier": "^6.15.0"
   },
   "devDependencies": {
     "typescript": "^4.1.2",
