@@ -8,6 +8,7 @@ module.exports = {
     semi: [2, "always"],
     'no-console': 'error',
     'linebreak-style': ['error', 'unix'],
+    'eslint-comments/require-description': ['error', { ignore: [] }],
     'no-restricted-imports': [
       'error',
       {
