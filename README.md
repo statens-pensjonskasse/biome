@@ -17,10 +17,11 @@ Dersom man laster `@spk/eslint-config` vil alle regelsettene bli brukt.
 
 ## Oppsett
 
+Avhengig av NPM 7 for å få med peerDependencies
+
 1. `npm i --save-dev @spk/eslint-config` (+ evt. peerDependencies som trengs)
 2. Sett inn `@spk/eslint-config` under `extends` i den lokale ESLint konfigurasjon
 3. Man kan overskrive og legge til regler lokalt som man trenger
-4. Plugins som brukes av biblioteket må installeres: `npm install eslint-plugin-prettier eslint-plugin-react eslint-plugin-sonarjs eslint-plugin-eslint-comments --save-dev`
 
 ## Eksempel .eslintrc
 ### Enkel (js)
