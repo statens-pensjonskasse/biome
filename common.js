@@ -1,6 +1,6 @@
 module.exports = {
   extends:[
-    'prettier',
+    'plugin:prettier/recommended',
     'plugin:eslint-comments/recommended',
   ],
   plugins: ['prettier'],
