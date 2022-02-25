@@ -1,1 +1,3 @@
-common.js
+module.exports = {
+  extends: ["./common"],
+};
