@@ -24,6 +24,5 @@ module.exports = {
         'sonarjs/no-identical-functions': 'off',
       },
     },
-
-  ]
-}
+  ],
+};

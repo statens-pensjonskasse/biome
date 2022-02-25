@@ -1,3 +1,3 @@
 module.exports = {
-  extends: ["./typescript", "./react", "./sonarjs", "./common"],
+  extends: ['./typescript', './react', './sonarjs', './common'],
 };
