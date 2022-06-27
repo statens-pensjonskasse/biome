@@ -47,3 +47,18 @@ module.exports = {
   }
 }
 ```
+
+### I prosjekter der man ikke har React
+
+Om du har et prosjekt uten React så får man gjerne feilmelding om en prøver å gjøre en lint. Dette løser du ved å ikke extende hele 
+`eslint-config`, men plukke ut de pakkene du trenger:
+
+```json
+{
+  "extends": [
+    "@spk/eslint-config/common",
+    "@spk/eslint-config/typescript",
+    "@spk/eslint-config/sonarjs"
+  ]
+}
+```
