@@ -1,4 +1,4 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["local>appark/renovate-preset:frontend"]
+  "extends": ["local>appark/renovate-preset:npm"]
 }
