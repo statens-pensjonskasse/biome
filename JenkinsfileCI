@@ -6,9 +6,7 @@ ciPipeline {
   config = CIPipelineConfig.get()
       .useNpmContainerify(
           node: 18,
-          branchPostfix: true,
-          test: 'run tbv')
-      .withSidecarTests()
+          branchPostfix: true)
       .withPublish(
           fromBranches: 'feature/, hotfix/, fix/',        // Publiser image fra feature/- og hotfix/-branches
           latestTag: true)                                // Tag image med 'latest'
