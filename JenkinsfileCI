@@ -7,7 +7,7 @@ ciPipeline {
       .useNpmContainerify(
           node: 18,
           branchPostfix: true,
-          test: 'run lint',
+          test: 'run lint')
       .withSidecarTests()
       .withPublish(
           fromBranches: 'feature/, hotfix/, fix/',        // Publiser image fra feature/- og hotfix/-branches
