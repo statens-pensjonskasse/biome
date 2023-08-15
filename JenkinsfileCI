@@ -6,7 +6,6 @@ ciPipeline {
   config = CIPipelineConfig.get()
       .useNpm(
           node: 18,
-          branchPostfix: true,
           test: 'run tbv')
       .withPublish(
           fromBranches: 'feature/, hotfix/, fix/',        // Publiser image fra feature/- og hotfix/-branches
