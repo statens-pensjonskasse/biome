@@ -1,0 +1,21 @@
+#!groovy
+@Library('jenkins-pipeline-library')
+import no.spk.jenkins.pipeline.cd.config.CDPipelineConfig
+
+cdPipeline {
+    config = CDPipelineConfig.get()
+      .deployToAdHoc(
+          fromBranches: 'feature/, hotfix/, fix/')
+        .tagAndDeployToTest(
+            env: 'kpt, lyn',
+            fromBranches: 'master'
+        )
+        .tagAndDeployToProd(
+            approvers: 'aor,eha,j19,tkj,tsk,any',
+            fromBranches: 'master',
+            includeKurs: true
+        )
+        .withSlackNotifications(
+            channels: 'frontendstøtte-cd'
+        )
+}

@@ -1,11 +1,13 @@
 {
   "name": "@spk/eslint-config",
-  "version": "5.6.0",
+  "version": "5.6.1-beta.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint --fix ."
+    "lint": "eslint --fix .",
+    "containerify:docker": "containerify --verbose --folder ./ --toDocker --allowInsecureRegistries",
+    "docker:build": "npm run build:production && npm run containerify:docker"
   },
   "repository": {
     "type": "git",

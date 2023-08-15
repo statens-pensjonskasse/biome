@@ -1,0 +1,26 @@
+#!groovy
+@Library('jenkins-pipeline-library@latest_develop')
+import no.spk.jenkins.pipeline.ci.config.CIPipelineConfig
+
+ciPipeline {
+  config = CIPipelineConfig.get()
+      .useNpmContainerify(
+          node: 18,
+          branchPostfix: true,
+          test: 'run lint',
+      .withSidecarTests()
+      .withPublish(
+          fromBranches: 'feature/, hotfix/, fix/',        // Publiser image fra feature/- og hotfix/-branches
+          latestTag: true)                                // Tag image med 'latest'
+      .withRelease(
+          fromBranch: 'master',                           // Gjør release fra master-branch
+          latestTag: true, versionTag: true)              // Tag image med 'latest' og <versjon>
+      .withVersionStrategy(strategy: 'semver_patch')      // Bruk conventional commits med fallback til patch
+      .withGitTaggingStrategy(semantic: 'master')         // Semantisk versjonering av image ut fra master-branch
+      .withAutoDeployJob(
+          fromBranches: 'master, feature/, hotfix/, fix/') // Autodeploy fra gitte branches
+      .withSlackNotifications(
+          channels: 'frontendstøtte-ci',                   // Send byggstatus til frontendstøtte-ci
+          emoji: 'mag'                                     // Emoji foran commit-melding
+      )
+  }
