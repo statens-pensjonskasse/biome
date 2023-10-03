@@ -5,7 +5,7 @@ import no.spk.jenkins.pipeline.ci.config.CIPipelineConfig
 ciPipeline {
   config = CIPipelineConfig.get()
       .useNpm(
-          node: 18,
+          node: 20,
           test: 'run tbv')
       .withPublish(
           fromBranches: 'feature/, hotfix/, fix/',        // Publiser image fra feature/- og hotfix/-branches
