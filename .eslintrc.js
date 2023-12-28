@@ -1,4 +1,4 @@
 module.exports = {
   extends: ['./common'],
-  env: { node: true },
+  env: { node: true, jest: true },
 };
