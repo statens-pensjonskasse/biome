@@ -1,6 +1,6 @@
 module.exports = {
   extends: ['eslint:recommended', 'plugin:prettier/recommended', 'plugin:eslint-comments/recommended'],
-  plugins: ['prettier'],
+  plugins: ['@typescript-eslint', 'prettier'],
   rules: {
     semi: [2, 'always'],
     'no-console': 'error',
