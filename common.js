@@ -1,5 +1,5 @@
 module.exports = {
-  extends: ['plugin:prettier/recommended', 'plugin:eslint-comments/recommended'],
+  extends: ['eslint:recommended', 'plugin:prettier/recommended', 'plugin:eslint-comments/recommended'],
   plugins: ['prettier'],
   rules: {
     semi: [2, 'always'],
