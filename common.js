@@ -6,6 +6,7 @@ module.exports = {
     'no-console': 'error',
     'linebreak-style': ['error', 'unix'],
     'eslint-comments/require-description': ['error', { ignore: [] }],
+    '@typescript-eslint/no-unused-vars': ['error'],
     'no-restricted-imports': [
       'error',
       {
