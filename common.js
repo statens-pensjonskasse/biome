@@ -1,5 +1,10 @@
 module.exports = {
-  extends: ['eslint:recommended', 'plugin:prettier/recommended', 'plugin:eslint-comments/recommended'],
+  extends: [
+    'plugin:cypress/recommended',
+    'eslint:recommended',
+    'plugin:prettier/recommended',
+    'plugin:eslint-comments/recommended',
+  ],
   plugins: ['@typescript-eslint', 'prettier'],
   rules: {
     semi: [2, 'always'],
