@@ -8,10 +8,10 @@ module.exports = {
   plugins: ['@typescript-eslint', 'prettier'],
   rules: {
     semi: [2, 'always'],
-    'no-console': 'error',
-    'linebreak-style': ['error', 'unix'],
+    '@typescript-eslint/no-unused-vars': 'error',
     'eslint-comments/require-description': ['error', { ignore: [] }],
-    '@typescript-eslint/no-unused-vars': ['error'],
+    'linebreak-style': ['error', 'unix'],
+    'no-console': 'error',
     'no-restricted-imports': [
       'error',
       {
@@ -20,5 +20,7 @@ module.exports = {
         ],
       },
     ],
+    'no-undef': 'off',
+    'no-unused-vars': 'off',
   },
 };
