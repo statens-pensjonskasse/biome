@@ -12,14 +12,7 @@ module.exports = {
     'eslint-comments/require-description': ['error', { ignore: [] }],
     'linebreak-style': ['error', 'unix'],
     'no-console': 'error',
-    'no-restricted-imports': [
-      'error',
-      {
-        patterns: [
-          'puma-components/dist/**', // hindrer direkte importering av mapper i puma-components
-        ],
-      },
-    ],
+    'no-restricted-imports': ['error'],
     'no-undef': 'off',
     'no-unused-vars': 'off',
   },
