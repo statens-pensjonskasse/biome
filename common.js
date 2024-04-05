@@ -12,6 +12,7 @@ module.exports = {
     'eslint-comments/require-description': ['error', { ignore: [] }],
     'linebreak-style': ['error', 'unix'],
     'no-console': 'error',
+    'no-redeclare': 'off',
     'no-restricted-imports': ['error'],
     'no-undef': 'off',
     'no-unused-vars': 'off',
