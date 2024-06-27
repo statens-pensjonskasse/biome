@@ -9,7 +9,7 @@ module.exports = {
   rules: {
     semi: [2, 'always'],
     '@typescript-eslint/no-unused-vars': 'error',
-    'eslint-comments/require-description': ['error', { ignore: [] }],
+    'eslint-comments/require-description': 'off',
     'linebreak-style': ['error', 'unix'],
     'no-console': 'error',
     'no-redeclare': 'off',
