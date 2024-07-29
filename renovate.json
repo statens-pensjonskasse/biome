@@ -1,4 +1,4 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["local>appark/renovate-preset:npm"]
+  "extends": ["local>appark/renovate-preset:weekly-automerge-non-major"]
 }
