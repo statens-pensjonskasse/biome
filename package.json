@@ -1,6 +1,6 @@
 {
   "name": "@spk/eslint-config",
-  "version": "6.9.7",
+  "version": "6.9.8-0",
   "description": "",
   "main": "index.js",
   "scripts": {
