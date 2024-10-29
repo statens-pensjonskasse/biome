@@ -27,5 +27,8 @@
   "dependencies": {},
   "devDependencies": {
     "@biomejs/biome": "^1.9.4"
+  },
+  "optionalDependencies": {
+    "@biomejs/cli-linux-x64": "1.9.4"
   }
 }

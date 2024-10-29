@@ -11,15 +11,21 @@ Man kan bruke deler av konfigurasjon ved å bare laste inn f.eks. `@spk/eslint-c
 
 ## Oppsett
 1. `npm i --save-dev @spk/eslint-config` (+ evt. peerDependencies som trengs)
-2. Legg inn en `biome.json` i roten av prosjektet, og fylle den med dette
+2. Legg inn en `biome.json` i roten av prosjektet, og fyll den med dette
 ```json
 {
   "extends": ["@spk/eslint-config"]
 }
 ```
-3. Man kan overskrive og legge til regler lokalt som man trenger (se eksempel nedenfor)
+3. Du kan også migrere dine eksisterende `.eslintrc` og `.prettierrc` til `biome.json`
+```sh
+npx biome migrate eslint --write
+npx biome migrate prettier --write
+```
 
-## Eksempel
+4. Man kan overskrive og legge til regler lokalt som man trenger (se eksempel nedenfor)
+
+## Eksempel bruk i kode
 ### Egne overrides gjøres direkte i `biome.json`
 ```json
 {
