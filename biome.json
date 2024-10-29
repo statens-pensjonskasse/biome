@@ -23,7 +23,8 @@
         "noMultipleSpacesInRegularExpressionLiterals": "error",
         "noUselessCatch": "error",
         "noWith": "error",
-        "useArrowFunction": "off"
+        "useArrowFunction": "off",
+        "noForEach": "off"
       },
       "correctness": {
         "noConstAssign": "error",
@@ -64,6 +65,8 @@
         "noDuplicateClassMembers": "error",
         "noDuplicateObjectKeys": "error",
         "noDuplicateParameters": "error",
+        "noDoubleEquals": "error",
+        "noExplicitAny": "off",
         "noEmptyBlockStatements": "error",
         "noFallthroughSwitchClause": "error",
         "noFunctionAssign": "error",
