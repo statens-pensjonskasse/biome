@@ -38,15 +38,16 @@ Man kan bruke deler av konfigurasjon ved å bare laste inn f.eks. `@spk/eslint-c
 
 
 
-Hvorfor ikke `eslintrc`?
+# Hvorfor ikke `eslintrc`?
 
 ## Ytelse
 Biome tilbyr betydelig bedre ytelse sammenlignet med ESLint:
-Ifølge ytelsestester er Biomes formateringshastighet opptil 25 ganger raskere enn Prettier.
-Biomes linting er omtrent 15 ganger raskere enn ESLint på en MacBook Pro M1.
+Ifølge ytelsestester er Biomes formateringshastighet opptil **25 ganger raskere** enn Prettier.
+Biomes linting er omtrent **15 ganger raskere** enn ESLint på en MacBook Pro M1.
+
 I praktiske tester har brukere rapportert dramatiske hastighetsforberinger. En utvikler noterte at Prettier + ESLint + Stylelint tok 10,12 sekunder, mens Biome + Stylelint tok bare 1,49 sekunder (der Biome selv tok kun 66ms).
 
-##Forenklet oppsett og konfigurasjon
+## Forenklet oppsett og konfigurasjon
 Biome gir en mer strømlinjeformet oppsettsprosess:
 1. Det krever kun installasjon av én avhengighet, noe som erstatter behovet for separate ESLint, Prettier og diverse plugins.
 2. Biome bruker én enkelt konfigurasjonsfil for både formatering og linting, noe som forenkler prosjektoppsettet.
@@ -76,7 +77,7 @@ Mange utviklere rapporterer at Biome er enklere å bruke og konfigurere:
 2. Biomes regler er tydelig dokumentert og lett tilgjengelige, noe som gjør det enklere å forstå hva som anvendes på koden din.
 
 
-## Hvorfor ikke bruke Biome?
+# Hvorfor ikke bruke `Biome`?
 
 Det er viktig å merke seg at Biome fortsatt er et relativt nytt verktøy sammenlignet med det veletablerte ESLint. 
 
