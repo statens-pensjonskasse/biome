@@ -1,21 +1,22 @@
 {
-  "name": "@spk/eslint-config",
-  "version": "7.0.0",
+  "name": "@spk/biome",
+  "version": "1.0.0",
   "description": "",
   "type": "module",
-  "main": "index.js",
+  "main": "biome.json",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "tbv": "biome check",
+    "test": "echo \"Error: testing is handled by @biomejs\" && exit 1",
+    "check": "biome check",
     "format": "biome format --write",
-    "lint": "biome check --write"
+    "lint": "biome check --write",
+    "lint:staged": "biome check --error-on-warnings -no-errors-on-unmatched --staged"
   },
   "repository": {
     "type": "git",
-    "url": "ssh://git@git.spk.no:7999/shipit/eslint-config.git"
+    "url": "ssh://git@git.spk.no:7999/shipit/biome.git"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Eivind Ingebrigtsen <eivind.ingebrigtsen@spk.no>",
+  "license": "ICT",
   "always-auth": true,
   "user": "sa-npm",
   "publishConfig": {
