@@ -1,64 +1,95 @@
-# Felles SPK ESLint regler
+# Felles SPK kode regler for TypeScript, JSON, JS, JSX, og React
 
-Bibliotek for ESLint regler som kan bruker på tvers av applikasjoner i SPK. Konfigurasjonen er delt opp i flere deler;
- * *common*: Basis oppsett
- * *typescript*: Regler for typescript
- * *react*: Regler for react
- * *sonarjs*: Statisk kodeanalyse fra Sonar (https://github.com/SonarSource/eslint-plugin-sonarjs). Finner kompleksitet og div. code smells.
-
-Man kan bruke deler av konfigurasjon ved å bare laste inn f.eks. `@spk/eslint-config/react`, `@spk/eslint-config/common`.
-Dersom man laster `@spk/eslint-config` vil alle regelsettene bli brukt.
+Bibliotek for regler som kan brukes på tvers av applikasjoner i SPK. 
+Man kan bruke deler av konfigurasjon ved å bare laste inn f.eks. `@spk/eslint-config`
 
 ## Hvorfor
 
 1. Forenkle oppsett av nye applikasjoner
-2. Felles grunnlag for kodestil
-3. Oppdatere ESLint regler på tvers av bibliotek
+2. Felles grunnlag for kodestil og standarder
+3. Oppdatere regler på tvers av bibliotek, moduler og applikasjoner
 
 ## Oppsett
-
-Avhengig av NPM 7 for å få med peerDependencies
-
-1. `npm i --save-dev @spk/eslint-config` (+ evt. peerDependencies som trengs)
-2. Sett inn `@spk/eslint-config` under `extends` i den lokale ESLint konfigurasjon
-3. Man kan overskrive og legge til regler lokalt som man trenger
-
-## Eksempel .eslintrc
-### Enkel (js)
-```javascript
-module.exports = {
-  extends: ['@spk/eslint-config'],
-};
+1. `npm i --save-dev @spk/eslint-config@7.0.0 @biomejs/biome` (+ evt. peerDependencies som trengs)
+2. Legg inn `biome.json` i roten av prosjektet, og fyll den med dette
+```json
+{
+  "extends": ["@spk/eslint-config"]
+}
 ```
+eller for en mer fullstendig konfigurasjon, kjør kommandoen:
+```sh
+npx biome init
+```
+3. Du kan også migrere dine eksisterende `.eslintrc` og `.prettierrc` til `biome.json`
+```sh
+npx biome migrate eslint --write
+npx biome migrate prettier --write
+```
+4. Man kan overskrive og legge til regler lokalt som man trenger (se eksempel nedenfor)
 
-### Egne overrides (json)
-
+## Eksempel bruk i kode
+### Egne overrides gjøres direkte i `biome.json`
 ```json
 {
   "extends": [
     "@spk/eslint-config"
   ],
-  "rules": {
-    "@typescript-eslint/ban-ts-ignore": "off",
-    "@typescript-eslint/no-explicit-any": "off",
-    "@typescript-eslint/no-use-before-define": "off",
-    "@typescript-eslint/no-var-requires": "off",
-    "@typescript-eslint/triple-slash-reference": "off"
+  "linter":{
+      "rules": {
+        "suspicious": {
+          "noExplicitAny": "error"
+        }
+    }
   }
 }
 ```
 
-### I prosjekter der man ikke har React
 
-Om du har et prosjekt uten React så får man gjerne feilmelding om en prøver å gjøre en lint. Dette løser du ved å ikke extende hele 
-`eslint-config`, men plukke ut de pakkene du trenger:
 
-```json
-{
-  "extends": [
-    "@spk/eslint-config/common",
-    "@spk/eslint-config/typescript",
-    "@spk/eslint-config/sonarjs"
-  ]
-}
-```
+# Hvorfor ikke `eslintrc`?
+
+## Ytelse
+Biome tilbyr betydelig bedre ytelse sammenlignet med ESLint:
+Ifølge ytelsestester er Biomes formateringshastighet opptil **25 ganger raskere** enn Prettier.
+Biomes linting er omtrent **15 ganger raskere** enn ESLint på en MacBook Pro M1.
+
+I praktiske tester har brukere rapportert dramatiske hastighetsforberinger. En utvikler noterte at Prettier + ESLint + Stylelint tok 10,12 sekunder, mens Biome + Stylelint tok bare 1,49 sekunder (der Biome selv tok kun 66ms).
+
+## Forenklet oppsett og konfigurasjon
+Biome gir en mer strømlinjeformet oppsettsprosess:
+1. Det krever kun installasjon av én avhengighet, noe som erstatter behovet for separate ESLint, Prettier og diverse plugins.
+2. Biome bruker én enkelt konfigurasjonsfil for både formatering og linting, noe som forenkler prosjektoppsettet.
+3. Initialiseringsprosessen er enkel, og krever vanligvis bare to kommandoer: installasjon og initialisering.
+
+## Enhetlig verktøy
+Biome kombinerer flere funksjoner i ett verktøy:
+1. Det fungerer som en formatterer, linter og analysator i én pakke.
+2. Denne enhetlige tilnærmingen eliminerer behovet for å avstemme motstridende regler mellom separate formaterings- og lintingverktøy.
+
+## Innebygd TypeScript-støtte
+Biome tilbyr innebygd støtte for TypeScript uten behov for ytterligere plugins eller konfigurasjon.
+
+## Moderne funksjoner
+Biome inkluderer noen moderne funksjoner som standard:
+1. Det sorterer automatisk imports, en funksjon som ofte krever ytterligere plugins med ESLint.
+2. Biome kan sortere Tailwind CSS-klasser, noe som erstatter behovet for separate Tailwind-spesifikke plugins.
+
+## Aktiv utvikling og fellesskapsstøtte
+Selv om Biome er nyere enn ESLint, er det under aktiv utvikling:
+1. Det kom ut som vinneren av en konkurranse for å lage en raskere JavaScript-formatterer, noe som indikerer dets potensial og interesse i utviklermiljøet.
+2. Prosjektet har et aktivt fellesskap og forbedres kontinuerlig.
+
+## Brukervennlighet
+Mange utviklere rapporterer at Biome er enklere å bruke og konfigurere:
+1. Konfigurasjonen beskrives som "superenkel" sammenlignet med det ofte komplekse oppsettet av ESLint og Prettier.
+2. Biomes regler er tydelig dokumentert og lett tilgjengelige, noe som gjør det enklere å forstå hva som anvendes på koden din.
+
+
+# Hvorfor ikke bruke `Biome`?
+
+Det er viktig å merke seg at Biome fortsatt er et relativt nytt verktøy sammenlignet med det veletablerte ESLint. 
+
+Det har kanskje ikke full funksjonalitetsparitet, bare 97%, eller det omfattende økosystemet av plugins som ESLint tilbyr. 
+
+Noen utviklere har rapportert at det føles ufullstendig på visse områder, med manglende støtte for YAML, GraphQL og noen avanserte funksjoner for import-sortering. 
