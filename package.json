@@ -1,6 +1,6 @@
 {
   "name": "@spk/biome",
-  "version": "1.0.7",
+  "version": "1.0.8-0",
   "description": "",
   "type": "module",
   "main": "biome.json",
