@@ -13,6 +13,10 @@
 4. [spkweb-designsystem](https://git.spk.no/projects/EPI/repos/spkweb-designsystem/pull-requests/296/overview)
 5. [spkweb-kom-dialog-mfe](https://git.spk.no/projects/DIALOG/repos/spkweb-kom-dialog-mfe/pull-requests/162/overview)
 6. [arbeidsliste-web](https://git.spk.no/projects/PU_AFL/repos/arbeidsliste-web/pull-requests/487/overview)
+7. [nav-data](https://git.spk.no/projects/PU_AFL/repos/nav-data/pull-requests/289/overview)
+8. [spk-api-gateway](https://git.spk.no/projects/FRONT/repos/spk-api-gateway/pull-requests/105/overview)
+
+
 
 ## Å gjøre endringer i prosjektene selv:
 
