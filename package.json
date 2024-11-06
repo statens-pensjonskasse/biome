@@ -1,6 +1,6 @@
 {
   "name": "@spk/biome",
-  "version": "1.0.2-0",
+  "version": "1.0.4-0",
   "description": "",
   "type": "module",
   "main": "biome.json",
@@ -23,10 +23,9 @@
     "registry": "http://nexus/content/repositories/spk-npm/"
   },
   "exports": {
-    "./biome": "./biome.json"
+    "./config": "./biome.json"
   },
-  "dependencies": {},
-  "devDependencies": {
+  "dependencies": {
     "@biomejs/biome": "^1.9.4"
   },
   "optionalDependencies": {
