@@ -45,6 +45,16 @@ npx biome migrate prettier --write
 }
 ```
 
+# Hvordan bruke linting til å forbedre kodekvalitet
+
+Strategien vi bruker er å bruke linting til å forbedre kodekvaliteten over tid, litt etter litt.
+
+Vi etablerer dagens kodestandard i `biome.json`, hvor dagens kvalitet i koden passerer linting, 
+og jobber deretter med å fjerne overridene vi må gjøre for å få koden til å passere linting.
+
+Dette gjør at vi kan jobbe videre med kodekvaliteten uten at det går ut over andre aktiviteter.
+
+
 
 
 # Hvorfor ikke `eslintrc`?
@@ -93,3 +103,6 @@ Det er viktig å merke seg at Biome fortsatt er et relativt nytt verktøy sammen
 Det har kanskje ikke full funksjonalitetsparitet, bare 97%, eller det omfattende økosystemet av plugins som ESLint tilbyr. 
 
 Noen utviklere har rapportert at det føles ufullstendig på visse områder, med manglende støtte for YAML, GraphQL og noen avanserte funksjoner for import-sortering. 
+
+
+
