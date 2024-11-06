@@ -1,7 +1,10 @@
 {
   "$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
   "vcs": { "enabled": false, "clientKind": "git", "useIgnoreFile": false },
-  "files": { "ignoreUnknown": false, "ignore": [] },
+  "files": {
+    "ignoreUnknown": false,
+    "ignore": ["**/node_modules/**", "**/dist/**", "**/build/**", "**/coverage/**", "stats.json"]
+  },
   "formatter": {
     "enabled": true,
     "useEditorconfig": true,
@@ -15,6 +18,7 @@
   },
   "organizeImports": { "enabled": true },
   "linter": {
+    "ignore": ["**/node_modules/**", "**/dist/**", "**/build/**", "**/coverage/**", "stats.json"],
     "enabled": true,
     "rules": {
       "nursery": {
