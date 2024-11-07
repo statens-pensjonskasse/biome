@@ -1,20 +1,19 @@
 # Felles SPK kode regler for TypeScript, JSON, JS, JSX, og React
 
-Bibliotek for regler som kan brukes på tvers av applikasjoner i SPK. 
-Man kan bruke deler av konfigurasjon ved å bare laste inn f.eks. `@spk/eslint-config`
+# `@spk/biome`
+Bibliotek for regler som kan brukes på tvers av applikasjoner i SPK
 
 ## Hvorfor
-
 1. Forenkle oppsett av nye applikasjoner
 2. Felles grunnlag for kodestil og standarder
 3. Oppdatere regler på tvers av bibliotek, moduler og applikasjoner
 
-## Oppsett
-1. `npm i --save-dev @spk/eslint-config@7.0.0 @biomejs/biome` (+ evt. peerDependencies som trengs)
+### Oppsett
+1. `npm i --save-dev @spk/biome`
 2. Legg inn `biome.json` i roten av prosjektet, og fyll den med dette
 ```json
 {
-  "extends": ["@spk/eslint-config"]
+  "extends": ["@spk/biome/config"]
 }
 ```
 eller for en mer fullstendig konfigurasjon, kjør kommandoen:
@@ -28,33 +27,24 @@ npx biome migrate prettier --write
 ```
 4. Man kan overskrive og legge til regler lokalt som man trenger (se eksempel nedenfor)
 
-## Eksempel bruk i kode
-### Egne overrides gjøres direkte i `biome.json`
+### Eksempel bruk i kode
+#### Egne overrides gjøres direkte i `biome.json`
 ```json
 {
   "extends": [
-    "@spk/eslint-config"
+    "@spk/biome/config"
   ],
   "linter":{
       "rules": {
         "suspicious": {
-          "noExplicitAny": "error"
+          "noExplicitAny": "off"
         }
     }
   }
 }
 ```
 
-# Hvordan bruke linting til å forbedre kodekvalitet
-
-Strategien vi bruker er å bruke linting til å forbedre kodekvaliteten over tid, litt etter litt.
-
-Vi etablerer dagens kodestandard i `biome.json`, hvor dagens kvalitet i koden passerer linting, 
-og jobber deretter med å fjerne overridene vi må gjøre for å få koden til å passere linting.
-
-Dette gjør at vi kan jobbe videre med kodekvaliteten uten at det går ut over andre aktiviteter.
-
-
+## 📐 [Oversikt over alle regler med dokumentasjon](https://biomejs.dev/linter/rules/)
 
 
 # Hvorfor ikke `eslintrc`?
@@ -102,7 +92,7 @@ Det er viktig å merke seg at Biome fortsatt er et relativt nytt verktøy sammen
 
 Det har kanskje ikke full funksjonalitetsparitet, bare 97%, eller det omfattende økosystemet av plugins som ESLint tilbyr. 
 
-Noen utviklere har rapportert at det føles ufullstendig på visse områder, med manglende støtte for YAML, GraphQL og noen avanserte funksjoner for import-sortering. 
+Noen utviklere har rapportert at det føles ufullstendig på visse områder, med manglende støtte for LESS, SCSS, YAML, GraphQL og noen avanserte funksjoner for import-sortering. 
 
 
-
+# Overbevist? Gå [hit](./MIGRATION.md) for å migrere til Biome.

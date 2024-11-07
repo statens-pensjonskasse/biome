@@ -1,12 +1,19 @@
 # Biome migrasjon
 
-## Oppsett av bibliotek i Nexus:
+Vi ønsker å bruke lint til å forbedre kodekvaliteten over tid, litt etter litt.
+Vi etablerer dagens kodestandard i `biome.json`, hvor dagens kvalitet i koden passerer linting, 
+og jobber deretter med å fjerne regel-bruddene vi må gjøre for å få koden til å passere linting.
+
+Dette gjør at vi kan jobbe videre med kodekvaliteten uten at det går ut over andre aktiviteter.
+
+
+## Bibliotek i Nexus som brukes:
 1. @spk/biome
 2. @spk/stylelint-base
 3. @spk/stylelint-less
 4. @spk/stylelint-scss
 
-## Pull-requests for å dra endringene inn i prosjektene:
+## Eksisterende pull-requests for å dra endringene inn i prosjektene:
 1. [spk-intern-designsystem](https://git.spk.no/projects/PU_AFL/repos/spk-intern-designsystem/pull-requests/283/overview)
 2. [rekonstruksjon](https://git.spk.no/projects/PU_AFL/repos/rekonstruksjon/pull-requests/404/overview)
 3. [spkweb-msm-pensjon](https://git.spk.no/projects/MSM_MMED/repos/spkweb-msm-pensjon/pull-requests/310/overview)
@@ -29,4 +36,5 @@ I rot av prosjektet kjør:
 ```
 npx @spk/standardize
 ```
+
 Følg instruksene i terminalen.

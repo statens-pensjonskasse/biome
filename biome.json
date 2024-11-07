@@ -21,10 +21,10 @@
     "ignore": ["**/node_modules/**", "**/dist/**", "**/build/**", "**/coverage/**", "stats.json"],
     "enabled": true,
     "rules": {
+      "recommended": true,
       "nursery": {
         "useSortedClasses": "warn"
       },
-      "recommended": true,
       "complexity": {
         "noExtraBooleanCast": "error",
         "noMultipleSpacesInRegularExpressionLiterals": "error",
