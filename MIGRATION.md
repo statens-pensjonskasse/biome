@@ -15,6 +15,11 @@
 6. [arbeidsliste-web](https://git.spk.no/projects/PU_AFL/repos/arbeidsliste-web/pull-requests/487/overview)
 7. [nav-data](https://git.spk.no/projects/PU_AFL/repos/nav-data/pull-requests/289/overview)
 8. [spk-api-gateway](https://git.spk.no/projects/FRONT/repos/spk-api-gateway/pull-requests/105/overview)
+9. [beregnetpensjon](https://git.spk.no/projects/FRONT/repos/beregnetpensjon/pull-requests/342/overview)
+10. [rettighet](https://git.spk.no/projects/FRONT/repos/rettighet/pull-requests/202/overview)
+11. [detaljvisning](https://git.spk.no/projects/FRONT/repos/detaljvisning/pull-requests/303/overview)
+12. [analyser](https://git.spk.no/projects/FRONT/repos/analyser/pull-requests/1658/overview)
+13. [kodeverk](https://git.spk.no/projects/FRONT/repos/kodeverk/pull-requests/311/overview)
 
 
 
