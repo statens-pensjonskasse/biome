@@ -102,5 +102,13 @@
       "attributePosition": "auto",
       "bracketSpacing": true
     }
-  }
+  },
+  "overrides": [
+    {
+      "include": ["**/*test.ts", "**/*test.tsx", "**/*test.js", "**/*test.jsx"],
+      "javascript": {
+        "globals": ["describe", "it", "expect", "beforeEach", "afterEach", "beforeAll", "afterAll"]
+      }
+    }
+  ]
 }

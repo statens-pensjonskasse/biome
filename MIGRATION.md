@@ -29,7 +29,7 @@ Dette gjør at vi kan jobbe videre med kodekvaliteten uten at det går ut over a
 | [detaljvisning](https://git.spk.no/projects/FRONT/repos/detaljvisning) | [PR-303](https://git.spk.no/projects/FRONT/repos/detaljvisning/pull-requests/303/overview) | 👍 | stylelint-less | 12 |  👍 |
 | [analyser](https://git.spk.no/projects/FRONT/repos/analyser) | [PR-1658](https://git.spk.no/projects/FRONT/repos/analyser/pull-requests/1658/overview) | 👍 | stylelint-less | 35 |  👍 |
 | [kodeverk](https://git.spk.no/projects/FRONT/repos/kodeverk) | [PR-311](https://git.spk.no/projects/FRONT/repos/kodeverk/pull-requests/311/overview) | 👍 | stylelint-less | 8 |  👍 |
-
+| [inntektsopplysninger-web](https://git.spk.no/projects/PU_AFL/repos/inntektsopplysninger-web/) | [PR-416](https://git.spk.no/projects/PU_AFL/repos/inntektsopplysninger-web/pull-requests/158/diff) | 🔴 | stylelint-less | 27 |  👍 |
 
 
 ## Å gjøre endringer i prosjektene selv:
@@ -44,5 +44,5 @@ Følg instruksene i terminalen, så har du basis oppsettet installert.
 
 1. Sett opp lint som del av pipeline i alle prosjekter
 2. Gå gjennom alle prosjekter og rette opp de regel-brudne linjene som ikke er i Biome-konfigurasjonen
-    a. Enten ta regel for regel som gir mest verdi
-    b. Legg inn en streng versjon i pipeline, men bare lint endringene som er gjort.
+    - a. Enten ta regel for regel som gir mest verdi
+    - b. Legg inn en streng versjon i pipeline, men bare lint endringene som er gjort.
