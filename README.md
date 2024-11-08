@@ -47,6 +47,27 @@ npx biome migrate prettier --write
 ## 📐 [Oversikt over alle regler med dokumentasjon](https://biomejs.dev/linter/rules/)
 
 
+# Praktiske kommandoer med biome
+
+### Oppsummert kvalitetssjekk av koden:
+
+```sh
+npx biome check --reporter=summary
+```
+
+### Lint forskjell mot main/master branch:
+Krever `{"vcs": { "enabled": true, "clientKind": "git", "defaultBranch": "main" }}` i `biome.json`
+
+```sh
+npx biome check --changed
+```
+
+### Lint staged changes for commit:
+```sh
+npx biome check --staged
+```
+
+
 # Hvorfor ikke `eslintrc`?
 
 ## Ytelse
