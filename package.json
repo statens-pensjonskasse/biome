@@ -23,12 +23,16 @@
     "registry": "http://nexus/content/repositories/spk-npm/"
   },
   "exports": {
-    "./config": "./biome.json"
+    "./config": "./biome.json",
+    "./strict": "./biome-all.json"
   },
   "dependencies": {
     "@biomejs/biome": "^1.9.4"
   },
   "optionalDependencies": {
     "@biomejs/cli-linux-x64": "1.9.4"
+  },
+  "devDependencies": {
+    "@types/node": "^22.9.0"
   }
 }

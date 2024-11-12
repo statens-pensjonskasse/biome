@@ -7,27 +7,12 @@ Bibliotek for regler som kan brukes på tvers av applikasjoner i SPK
 1. Forenkle oppsett av nye applikasjoner
 2. Felles grunnlag for kodestil og standarder
 3. Oppdatere regler på tvers av bibliotek, moduler og applikasjoner
+4. Gi utviklere bedre verktøy for å produsere kode med høy kvalitet
 
-### Oppsett
-1. `npm i --save-dev @spk/biome`
-2. Legg inn `biome.json` i roten av prosjektet, og fyll den med dette
-```json
-{
-  "extends": ["@spk/biome/config"]
-}
-```
-eller for en mer fullstendig konfigurasjon, kjør kommandoen:
-```sh
-npx biome init
-```
-3. Du kan også migrere dine eksisterende `.eslintrc` og `.prettierrc` til `biome.json`
-```sh
-npx biome migrate eslint --write
-npx biome migrate prettier --write
-```
-4. Man kan overskrive og legge til regler lokalt som man trenger (se eksempel nedenfor)
+### Sette opp biome? Gå [hit](./MIGRATION.md)
 
-### Eksempel bruk i kode
+
+### Eksempel bruk i prosjekt
 #### Egne overrides gjøres direkte i `biome.json`
 ```json
 {
@@ -44,7 +29,8 @@ npx biome migrate prettier --write
 }
 ```
 
-## 📐 [Oversikt over alle regler med dokumentasjon](https://biomejs.dev/linter/rules/)
+# 📐 [Alle regler med dokumentasjon](https://biomejs.dev/linter/rules/)
+
 
 
 # Praktiske kommandoer med biome
@@ -116,4 +102,5 @@ Det har kanskje ikke full funksjonalitetsparitet, bare 97%, eller det omfattende
 Noen utviklere har rapportert at det føles ufullstendig på visse områder, med manglende støtte for LESS, SCSS, YAML, GraphQL og noen avanserte funksjoner for import-sortering. 
 
 
-# Overbevist? Gå [hit](./MIGRATION.md) for å migrere til Biome.
+# Overbevist? 
+Gå [hit](./MIGRATION.md) for å sette opp Biome.
