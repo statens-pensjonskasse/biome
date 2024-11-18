@@ -1,8 +1,5 @@
 {
-  "extends": [
-    "./common.json",
-    "./dev.json"
-  ],
+  "extends": ["./common.json", "./dev.json"],
   "linter": {
     "rules": {
       "recommended": true,
