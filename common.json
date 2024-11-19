@@ -7,13 +7,7 @@
   },
   "files": {
     "ignoreUnknown": false,
-    "ignore": [
-      "**/node_modules/**",
-      "**/dist/**",
-      "**/build/**",
-      "**/coverage/**",
-      "stats.json"
-    ]
+    "ignore": ["**/node_modules/**", "**/dist/**", "**/build/**", "**/coverage/**", "stats.json"]
   },
   "formatter": {
     "enabled": true,
@@ -30,13 +24,7 @@
     "enabled": true
   },
   "linter": {
-    "ignore": [
-      "**/node_modules/**",
-      "**/dist/**",
-      "**/build/**",
-      "**/coverage/**",
-      "stats.json"
-    ],
+    "ignore": ["**/node_modules/**", "**/dist/**", "**/build/**", "**/coverage/**", "stats.json"],
     "enabled": true
   },
   "javascript": {
@@ -65,15 +53,7 @@
         "**./*.cy.jsx"
       ],
       "javascript": {
-        "globals": [
-          "describe",
-          "it",
-          "expect",
-          "beforeEach",
-          "afterEach",
-          "beforeAll",
-          "afterAll"
-        ]
+        "globals": ["describe", "it", "expect", "beforeEach", "afterEach", "beforeAll", "afterAll"]
       }
     }
   ]
