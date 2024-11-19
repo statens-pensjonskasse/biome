@@ -79,24 +79,12 @@ Du må sjekke om du har `stylelint-{plugin}` installert i `package.json` og at d
 -  sett regler for `{plugin}/rule-name` i `.stylelintrc.json` til `null`, og så kjøre migrasjonen igjen.
 
 
-## Eksempel prosjekter hvor vi har testet ut endringer:
+## Analyse av repo med biome
 
-    ⚠️ Disse kodeendringene ble gjort for å danne basis for Biome migrasjonsverktøyet.
+- [Repo i testen](https://git.spk.no/projects/SHIPIT/repos/autoanalyser/browse/repos.txt)
+- Total diagnostics across all files: 117 377
+- Total code errors: 36 430
+- Total code warnings: 80 947
 
-| Prosjekt | Pull-request | Hadde stylelint? | Stylelint | Overrides | Lint i pipeline |
-| --- | --- | --- | --- | --- | --- |
-| [spk-intern-designsystem](https://git.spk.no/projects/PU_AFL/repos/spk-intern-designsystem) | [PR-283](https://git.spk.no/projects/PU_AFL/repos/spk-intern-designsystem/pull-requests/283/overview) | 🔴 | stylelint-less | 34 | ? |
-| [rekonstruksjon](https://git.spk.no/projects/PU_AFL/repos/rekonstruksjon)| [PR-404](https://git.spk.no/projects/PU_AFL/repos/rekonstruksjon/pull-requests/404/overview) | 🔴 | stylelint-less | 12 | 👍 |
-| [spkweb-msm-pensjon](https://git.spk.no/projects/MSM_MMED/repos/spkweb-msm-pensjon) | [PR-310](https://git.spk.no/projects/MSM_MMED/repos/spkweb-msm-pensjon/pull-requests/310/overview) | 🔴 | stylelint-scss | 56 | ? |
-| [spkweb-designsystem](https://git.spk.no/projects/EPI/repos/spkweb-designsystem) | [PR-296](https://git.spk.no/projects/EPI/repos/spkweb-designsystem/pull-requests/296/overview) | 👍 | stylelint-scss | 37 |  ? |
-| [spkweb-kom-dialog-mfe](https://git.spk.no/projects/DIALOG/repos/spkweb-kom-dialog-mfe) | [PR-162](https://git.spk.no/projects/DIALOG/repos/spkweb-kom-dialog-mfe/pull-requests/162/overview) | 👍 | stylelint-scss | 25 | ? |
-| [arbeidsliste-web](https://git.spk.no/projects/PU_AFL/repos/arbeidsliste-web) | [PR-487](https://git.spk.no/projects/PU_AFL/repos/arbeidsliste-web/pull-requests/487/overview) | 👍 | stylelint-less | 25 |  ? |
-| [nav-data](https://git.spk.no/projects/PU_AFL/repos/nav-data) | [PR-289](https://git.spk.no/projects/PU_AFL/repos/nav-data/pull-requests/289/overview) | 👍 | stylelint-less | 19 |  👍 |
-| [spk-api-gateway](https://git.spk.no/projects/FRONT/repos/spk-api-gateway) | [PR-105](https://git.spk.no/projects/FRONT/repos/spk-api-gateway/pull-requests/105/overview) | - | - | 8 |  👍 |
-| [beregnetpensjon](https://git.spk.no/projects/FRONT/repos/beregnetpensjon) | [PR-342](https://git.spk.no/projects/FRONT/repos/beregnetpensjon/pull-requests/342/overview) |  👍 | stylelint-less | 16 |  👍 |
-| [rettighet](https://git.spk.no/projects/FRONT/repos/rettighet) | [PR-202](https://git.spk.no/projects/FRONT/repos/rettighet/pull-requests/202/overview) |  🔴 | stylelint-less | 6 |  👍 |
-| [detaljvisning](https://git.spk.no/projects/FRONT/repos/detaljvisning) | [PR-303](https://git.spk.no/projects/FRONT/repos/detaljvisning/pull-requests/303/overview) | 👍 | stylelint-less | 12 |  👍 |
-| [analyser](https://git.spk.no/projects/FRONT/repos/analyser) | [PR-1658](https://git.spk.no/projects/FRONT/repos/analyser/pull-requests/1658/overview) | 👍 | stylelint-less | 35 |  👍 |
-| [kodeverk](https://git.spk.no/projects/FRONT/repos/kodeverk) | [PR-311](https://git.spk.no/projects/FRONT/repos/kodeverk/pull-requests/311/overview) | 👍 | stylelint-less | 8 |  👍 |
-| [inntektsopplysninger-web](https://git.spk.no/projects/PU_AFL/repos/inntektsopplysninger-web/) | [PR-416](https://git.spk.no/projects/PU_AFL/repos/inntektsopplysninger-web/pull-requests/158/diff) | 🔴 | stylelint-less | 27 |  👍 |
+Gå til [Autoanalyser repoet](https://git.spk.no/projects/SHIPIT/repos/autoanalyser/browse/totals-summary-all-on.md), og se resultatene der.
 
