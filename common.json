@@ -50,7 +50,7 @@
         "**/*.cy.ts",
         "**/*.cy.tsx",
         "**/*.cy.js",
-        "**./*.cy.jsx"
+        "**/*.cy.jsx"
       ],
       "javascript": {
         "globals": ["describe", "it", "expect", "beforeEach", "afterEach", "beforeAll", "afterAll"]
