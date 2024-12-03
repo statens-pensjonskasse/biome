@@ -2,6 +2,6 @@ echo Generer rapport for Biome
 
 npx biome check --reporter=github --config-path=./node_modules/@spk/biome/biome-all.json > tmp
 
-./node_modules/@spk/biome/report_generate.sh tmp report.md
+./node_modules/@spk/biome/report_generate.sh tmp report-$(date +%Y-%m-%d).md
 
 rm tmp
