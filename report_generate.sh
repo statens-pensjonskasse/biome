@@ -60,7 +60,7 @@ sort | uniq -c |
 while read -r count rule; do
     category=$(echo "$rule" | cut -d'/' -f1)
     rulename=$(echo "$rule" | cut -d'/' -f2-)
-    rulenamekebab=$(convert_to_kebab_case  rulename)
+    rulenamekebab=$(convert_to_kebab_case  "$rulename")
     # Skip format, parse and organizeImports categories
 	if [ "$category" != "format" ] && [ "$category" != "organizeImports" ] && [ "$category" != "parse" ]; then
 		echo "| $category | [\`$rulename\`](https://biomejs.dev/linter/rules/${rulenamekebab}) | $count |" >> "$output_file"
