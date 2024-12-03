@@ -58,8 +58,8 @@ grep "::error" "$input_file" |
 sed 's/.*title=\([^,]*\),.*/\1/' |
 sort | uniq -c |
 while read -r count rule; do
-    category=$(echo "$rule" | cut -d'/' -f1)
-    rulename=$(echo "$rule" | cut -d'/' -f2-)
+    category=$(echo "$rule" | cut -d'/' -f2)
+    rulename=$(echo "$rule" | cut -d'/' -f3)
     rulenamekebab=$(convert_to_kebab_case  "$rulename")
     # Skip format, parse and organizeImports categories
 	if [ "$category" != "format" ] && [ "$category" != "organizeImports" ] && [ "$category" != "parse" ]; then
@@ -81,8 +81,9 @@ grep "::warning" "$input_file" |
 sed 's/.*title=\([^,]*\),.*/\1/' |
 sort | uniq -c |
 while read -r count rule; do
-    category=$(echo "$rule" | cut -d'/' -f1)
-    rulename=$(echo "$rule" | cut -d'/' -f2-)
-    echo "| $category |[\`$rulename\`](https://biomejs.dev/linter/rules/${rulename}) | $count |" >> "$output_file"
+    category=$(echo "$rule" | cut -d'/' -f2)
+    rulename=$(echo "$rule" | cut -d'/' -f3)
+    rulenamekebab=$(convert_to_kebab_case  "$rulename")
+    echo "| $category | [\`$rulename\`](https://biomejs.dev/linter/rules/${rulenamekebab}) | $count |" >> "$output_file"
 done
 
