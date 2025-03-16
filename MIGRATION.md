@@ -6,27 +6,27 @@ Strategien er å etablere dagens kodestandard i `biome.json`, hvor dagens kvalit
 Dette gjør at vi kan minimere risikoen og konsekvensene med å gjøre endringer i lint verktøyet. Med et enkelt migreringsverktøy som vist under gjør det også at vi kan jobbe videre med kodekvaliteten uten at dette går ut over andre aktiviteter.
 
 ## Bibliotek i Nexus som brukes:
-1. [@spk/biome](https://git.spk.no/projects/SHIPIT/repos/biome/browse)
-2. [@spk/stylelint-base](https://git.spk.no/projects/SHIPIT/repos/stylelint-base/browse)
-3. [@spk/stylelint-less](https://git.spk.no/projects/SHIPIT/repos/stylelint-less/browse)
-4. [@spk/stylelint-scss](https://git.spk.no/projects/SHIPIT/repos/stylelint-scss/browse)
+1. [@statens-pensjonskasse/biome](https://git.spk.no/projects/SHIPIT/repos/biome/browse)
+2. [@statens-pensjonskasse/stylelint-base](https://git.spk.no/projects/SHIPIT/repos/stylelint-base/browse)
+3. [@statens-pensjonskasse/stylelint-less](https://git.spk.no/projects/SHIPIT/repos/stylelint-less/browse)
+4. [@statens-pensjonskasse/stylelint-scss](https://git.spk.no/projects/SHIPIT/repos/stylelint-scss/browse)
 
 
 ## Migrere et prosjekt til Biome:
 I rot av prosjektet på `main`/`master` branch kjør:
 ```
-npx @spk/standardize
+npx @statens-pensjonskasse/standardize
 ```
 Følg instruksene i terminalen, så har du basis oppsettet installert.
 
 **Verktøyet gjør følgende:**
-1. Installerer `@spk/biome` i prosjektet
+1. Installerer `@statens-pensjonskasse/biome` i prosjektet
 2. Kjører en `biome check` med alle reglene skrudd på
 3. Fanger alle regler som feiler `biome check` og legger dem i `biome.json` som `"off"`
 4. Migrerer `prettier` konfigurasjonen til `biome.json`
 5. Formatterer koden med `biome format --write`
 6. Sjekker om det er behov for `stylelint` i prosjektet (`less` eller `scss`)
-7. Installerer `@spk/stylelint-{less,scss}` hvis det er behov for det
+7. Installerer `@statens-pensjonskasse/stylelint-{less,scss}` hvis det er behov for det
 8. Fanger alle regler som feiler `stylelint` og legger dem i `.stylelintrc.json` som `null`
 9. Spør om du vil fjerne unødvendige filer (`.prettierrc`, `.eslintrc`, `.eslintignore`, …)
 10. Legger inn `lint` og `format` script i `package.json`

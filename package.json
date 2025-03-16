@@ -1,6 +1,6 @@
 {
   "name": "@statens-pensjonskasse/biome",
-  "version": "PACKAGE_VERSION",
+  "version": "1,0.27",
   "description": "",
   "type": "module",
   "main": "biome.json",
@@ -22,7 +22,7 @@
     "npm",
     "frontend"
   ],
-  "author": "Eivind Ingebrigtsen <eivind.ingebrigtsen@spk.no>",
+  "author": "Eivind Ingebrigtsen <eivind.ingebrigtsen@statens-pensjonskasse.no>",
   "license": "ICT",
   "always-auth": true,
   "exports": {
