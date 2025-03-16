@@ -1,6 +1,6 @@
 # Felles SPK kode regler for TypeScript, JSON, JS, JSX, og React
 
-# `@spk/biome`
+# `@statens-pensjonskasse/biome`
 Bibliotek for regler som kan brukes på tvers av applikasjoner i SPK
 
 ## Hvorfor
@@ -17,7 +17,7 @@ Bibliotek for regler som kan brukes på tvers av applikasjoner i SPK
 ```json
 {
   "extends": [
-    "@spk/biome/config"
+    "@statens-pensjonskasse/biome/config"
   ],
   "linter":{
       "rules": {
