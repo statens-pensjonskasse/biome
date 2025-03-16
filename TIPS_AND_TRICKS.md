@@ -5,7 +5,7 @@
 - Bytt ut `biome.json` med denne filen:
 ```json
 {
-    "extends": ["@spk/biome/config"],
+    "extends": ["@statens-pensjonskasse/biome/config"],
     "linter": {
     "rules": {
         "all": true,
