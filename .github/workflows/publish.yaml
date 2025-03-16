@@ -124,9 +124,9 @@ jobs:
         run: |
           TAG_VERSION="${{ steps.version.outputs.version }}"
           PACKAGE_VERSION=$(jq -r '.version' package.json)
-          VERSION=$(echo -e "PACKAGE_VERSION\n$TAG_VERSION" | sort -V | tail -n1)
+          VERSION=$(echo -e "$PACKAGE_VERSION\n$TAG_VERSION" | sort -V | tail -n1)
           echo "version=$VERSION" >> $GITHUB_OUTPUT
-          echo "Using $VERSION (package.json=PACKAGE_VERSION, tag=$TAG_VERSION)"
+          echo "Using $VERSION (package.json=$PACKAGE_VERSION, tag=$TAG_VERSION)"
       - name: Update package.json to release version
         if: steps.should-publish.outputs.release == 'true'
         run: |
