@@ -4,10 +4,10 @@
 Bibliotek for regler som kan brukes på tvers av applikasjoner i SPK
 
 ## Hvorfor
-1. Forenkle oppsett av nye applikasjoner
-2. Felles grunnlag for kodestil og standarder
+1. Forenkle oppsett av nye applikasjonersfsfsfsfsdf
+2. Felles grunnlag for kodestil og standardersfdfsdf
 3. Oppdatere regler på tvers av bibliotek, moduler og applikasjoner
-4. Gi utviklere bedre verktøy for å produsere kode med høy kvalitet
+4. Gi utviklere bedre verktøy for å produsere kode med høy kvalitetene
 
 ### Sette opp biome? Gå [hit](./MIGRATION.md)
 
@@ -72,7 +72,7 @@ Biome gir en mer strømlinjeformet oppsettsprosess:
 ## Enhetlig verktøy
 Biome kombinerer flere funksjoner i ett verktøy:
 1. Det fungerer som en formatterer, linter og analysator i én pakke.
-2. Denne enhetlige tilnærmingen eliminerer behovet for å avstemme motstridende regler mellom separate formaterings- og lintingverktøy.
+2. Denne enhetlige tilnærmingen eliminerer behovet for å avstemme motstridende regler mellom separate formaterings- og lintingverktøy.sfs
 
 ## Innebygd TypeScript-støtte
 Biome tilbyr innebygd støtte for TypeScript uten behov for ytterligere plugins eller konfigurasjon.
