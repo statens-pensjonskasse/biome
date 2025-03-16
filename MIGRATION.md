@@ -21,7 +21,7 @@ Følg instruksene i terminalen, så har du basis oppsettet installert.
 
 **Verktøyet gjør følgende:**
 1. Installerer `@statens-pensjonskasse/biome` i prosjektet
-2. Kjører en `biome check` med alle reglene skrudd på
+2. Kjører en `biome check` med alle reglene skrudd påsfsfsfsf
 3. Fanger alle regler som feiler `biome check` og legger dem i `biome.json` som `"off"`
 4. Migrerer `prettier` konfigurasjonen til `biome.json`
 5. Formatterer koden med `biome format --write`

@@ -78,7 +78,7 @@ Biome kombinerer flere funksjoner i ett verktøy:
 Biome tilbyr innebygd støtte for TypeScript uten behov for ytterligere plugins eller konfigurasjon.
 
 ## Moderne funksjoner
-Biome inkluderer noen moderne funksjoner som standard:
+Biome inkluderer noen moderne funksjoner som standard:sfsfsfsfsdfsdf
 1. Det sorterer automatisk imports, en funksjon som ofte krever ytterligere plugins med ESLint.
 2. Biome kan sortere Tailwind CSS-klasser, noe som erstatter behovet for separate Tailwind-spesifikke plugins.
 
