@@ -1,6 +1,6 @@
 {
   "name": "@statens-pensjonskasse/biome",
-  "version": "1.0.27-0",
+  "version": "PACKAGE_VERSION",
   "description": "",
   "type": "module",
   "main": "biome.json",
