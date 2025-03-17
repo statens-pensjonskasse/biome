@@ -5,7 +5,6 @@
   "type": "module",
   "main": "biome.json",
   "scripts": {
-    "test": "echo \"Error: testing is handled by @biomejs\" && exit 1",
     "check": "biome check",
     "format": "biome format --write",
     "lint": "biome check --write",
