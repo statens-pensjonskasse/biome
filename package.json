@@ -1,7 +1,7 @@
 {
   "name": "@statens-pensjonskasse/biome",
-  "version": "-beta.0",
-  "description": "",
+  "version": "7.1.0",
+  "description": "Biome is a tool for managing npm packages",
   "type": "module",
   "main": "biome.json",
   "scripts": {
