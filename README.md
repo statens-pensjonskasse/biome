@@ -13,7 +13,7 @@ Bibliotek for regler som kan brukes på tvers av applikasjoner i SPK
 
 
 ### Eksempel bruk i prosjekt
-#### Egne overrides gjøres direkte i `biome.json`
+#### Egne overrides gjøres direkte til `biome.json`
 ```json
 {
   "extends": [
