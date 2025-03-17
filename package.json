@@ -9,7 +9,8 @@
     "check": "biome check",
     "format": "biome format --write",
     "lint": "biome check --write",
-    "lint:staged": "biome check --error-on-warnings -no-errors-on-unmatched --staged"
+    "lint:staged": "biome check --error-on-warnings -no-errors-on-unmatched --staged",
+    "publish": "npm publish"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
