@@ -4,7 +4,7 @@
 Bibliotek for regler som kan brukes på tvers av applikasjoner i SPK
 
 ## Hvorfor
-1. Forenkle oppsett av nye applikasjonersfsfsfsfsdf
+1. Forenkle oppsett asfsfsdfv nye applikasjonersfsfsfsfsdf
 2. Felles grunnlag for kodestil og standardersfdfsdf
 3. Oppdatere regler på tvers av bibliotek, moduler og applikasjoner
 4. Gi utviklere bedre verktøy for å produsere kode med høy kvalitetene
