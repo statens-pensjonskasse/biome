@@ -12,7 +12,7 @@ jobs:
       packages: write
     secrets: inherit
     with:
-      node-version: '22'
+      node-version: '21'
       slack-channel: '#github-alerts'
       slack-bot-name: 'GitHub Actions'
       slack-bot-icon: ':monkey:'
