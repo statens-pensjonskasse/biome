@@ -14,6 +14,6 @@ jobs:
     with:
       node-version: '22'
       slack-channel: '#github-alerts'
-      slack-bot-name: 'Tofik Test Node Library'
+      slack-bot-name: 'GitHub Actions'
       slack-bot-icon: ':monkey:'
 
