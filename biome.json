@@ -30,6 +30,10 @@
       "recommended": true,
       "nursery": {
         "useSortedClasses": "warn"
+      },
+      "correctness": {
+        "noUnusedImports": "error",
+        "noUnusedVariables": "error"
       }
     }
   },
