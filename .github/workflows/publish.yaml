@@ -13,7 +13,7 @@ jobs:
     secrets: inherit
     with:
       node-version: '21'
-      slack-channel: '#github-alerts'
-      slack-bot-name: 'GitHub Actions'
-      slack-bot-icon: ':monkey:'
+      slack-channel: '#frontendstøtte-ci'
+      slack-bot-name: 'Biome'
+      slack-bot-icon: ':mag:'
 
