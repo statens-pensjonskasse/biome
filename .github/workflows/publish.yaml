@@ -6,7 +6,7 @@ on:
 
 jobs:
   build:
-    uses: statens-pensjonskasse/github-actions-library/.github/workflows/build-library-npm-yarn.yaml@3b34a5629a335f326b4007a909a8c5e729367b00
+    uses: statens-pensjonskasse/github-actions-library/.github/workflows/build-library-npm-yarn.yaml@7429bb0fdd977afdea23b4eb5e8ff50263e7df8a
     permissions:
       contents: write
       packages: write

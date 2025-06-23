@@ -35,6 +35,6 @@
     "@biomejs/cli-linux-x64": "1.9.4"
   },
   "devDependencies": {
-    "@types/node": "^22.15.31"
+    "@types/node": "^22.15.32"
   }
 }
