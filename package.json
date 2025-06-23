@@ -29,10 +29,10 @@
     "./strict": "./biome-all.json"
   },
   "dependencies": {
-    "@biomejs/biome": "^1.9.4"
+    "@biomejs/biome": "^2.0.4"
   },
   "optionalDependencies": {
-    "@biomejs/cli-linux-x64": "1.9.4"
+    "@biomejs/cli-linux-x64": "2.0.4"
   },
   "devDependencies": {
     "@types/node": "^22.15.32"
