@@ -1,5 +1,5 @@
 {
-  "$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
+  "$schema": "https://biomejs.dev/schemas/2.0.5/schema.json",
   "vcs": {
     "enabled": false,
     "clientKind": "git",
@@ -7,7 +7,14 @@
   },
   "files": {
     "ignoreUnknown": false,
-    "ignore": ["**/node_modules/**", "**/dist/**", "**/build/**", "**/coverage/**", "stats.json"]
+    "includes": [
+      "**",
+      "!**/node_modules/**",
+      "!**/dist/**",
+      "!**/build/**",
+      "!**/coverage/**",
+      "!stats.json"
+    ]
   },
   "formatter": {
     "enabled": true,
@@ -20,14 +27,19 @@
     "attributePosition": "auto",
     "bracketSpacing": true
   },
-  "organizeImports": {
-    "enabled": true
-  },
+  "assist": { "actions": { "source": { "organizeImports": "on" } } },
   "linter": {
-    "ignore": ["**/node_modules/**", "**/dist/**", "**/build/**", "**/coverage/**", "stats.json"],
+    "includes": [
+      "**",
+      "!**/node_modules/**",
+      "!**/dist/**",
+      "!**/build/**",
+      "!**/coverage/**",
+      "!stats.json"
+    ],
     "enabled": true,
     "rules": {
-      "all": true
+      "recommended": true
     }
   },
   "javascript": {
@@ -45,18 +57,26 @@
   },
   "overrides": [
     {
-      "include": [
-        "**/*test.ts",
-        "**/*test.tsx",
-        "**/*test.js",
-        "**/*test.jsx",
+      "includes": [
+        "**/*.test.ts",
+        "**/*.test.tsx",
+        "**/*.test.js",
+        "**/*.test.jsx",
         "**/*.cy.ts",
         "**/*.cy.tsx",
         "**/*.cy.js",
         "**/*.cy.jsx"
       ],
       "javascript": {
-        "globals": ["describe", "it", "expect", "beforeEach", "afterEach", "beforeAll", "afterAll"]
+        "globals": [
+          "describe",
+          "it",
+          "expect",
+          "beforeEach",
+          "afterEach",
+          "beforeAll",
+          "afterAll"
+        ]
       }
     }
   ]
