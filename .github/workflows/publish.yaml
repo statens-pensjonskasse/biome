@@ -12,6 +12,7 @@ jobs:
       packages: write
     secrets: inherit
     with:
+      test-goals: 'run lint'
       node-version: '21'
       slack-channel: '#frontendstøtte-ci'
       slack-bot-name: 'Biome'
