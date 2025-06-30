@@ -25,16 +25,15 @@
   "license": "ICT",
   "always-auth": true,
   "exports": {
-    "./config": "./biome.json",
-    "./strict": "./biome-all.json"
+    "./config": "./biome.json"
   },
   "dependencies": {
-    "@biomejs/biome": "^1.9.4"
+    "@biomejs/biome": "^2.0.6"
   },
   "optionalDependencies": {
-    "@biomejs/cli-linux-x64": "1.9.4"
+    "@biomejs/cli-linux-x64": "2.0.6"
   },
   "devDependencies": {
-    "@types/node": "^22.15.34"
+    "@types/node": "^24.0.3"
   }
 }
