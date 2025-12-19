@@ -6,7 +6,7 @@ on:
 
 jobs:
   build:
-    uses: statens-pensjonskasse/public-actions-library/.github/workflows/build-library-node.yaml@fix/npm-workflows
+    uses: statens-pensjonskasse/public-actions-library/.github/workflows/build-library-node.yaml@248ea2c35214487333e9eb17c84e3b353a524451 # v0.2.4
     permissions:
       contents: write
       packages: write
