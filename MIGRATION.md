@@ -21,7 +21,7 @@ Følg instruksene i terminalen, så har du basis oppsettet installert.
 
 **Verktøyet gjør følgende:**
 1. Installerer `@statens-pensjonskasse/biome` i prosjektet
-2. Kjører en `biome check` med alle reglene skrudd påsfsfsfsf
+2. Kjører en `biome check` med alle reglene skrudd på
 3. Fanger alle regler som feiler `biome check` og legger dem i `biome.json` som `"off"`
 4. Migrerer `prettier` konfigurasjonen til `biome.json`
 5. Formatterer koden med `biome format --write`
@@ -32,8 +32,6 @@ Følg instruksene i terminalen, så har du basis oppsettet installert.
 10. Legger inn `lint` og `format` script i `package.json`
 11. Setter sammen en rapport med alle feilene som ble oppdaget i `CODE_QUALITY_REPORT.md` med lenker til dokumentasjonen for hver regel
 12. Spytter ut alle endringene med git status: dette skal hovedsaklig være filer som nå blir formatert, filer som er tatt bort, nye konfigurasjonsfiler og nye dependendencies for biome og stylelint 
-
-Hvis du vil inspisere koden som kjører i CLI verktøyet, kan du [gjøre det her](https://git.spk.no/projects/SHIPIT/repos/standardize/browse/src/cli.ts).
 
 Etter installasjonen kan du kjøre:
 ```bash
@@ -78,13 +76,4 @@ Du må sjekke om du har `stylelint-{plugin}` installert i `package.json` og at d
     👨‍🔧 Feilen løses ved å skru av reglene for gitte plugin
 -  sett regler for `{plugin}/rule-name` i `.stylelintrc.json` til `null`, og så kjøre migrasjonen igjen.
 
-
-## Analyse av repo med biome
-
-- [Repo i testen](https://git.spk.no/projects/SHIPIT/repos/autoanalyser/browse/repos.txt)
-- Total diagnostics across all files: 117 377
-- Total code errors: 36 430
-- Total code warnings: 80 947
-
-Gå til [Autoanalyser repoet](https://git.spk.no/projects/SHIPIT/repos/autoanalyser/browse/totals-summary-all-on.md), og se resultatene der.
 

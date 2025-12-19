@@ -72,7 +72,7 @@ Biome gir en mer strømlinjeformet oppsettsprosess:
 ## Enhetlig verktøy
 Biome kombinerer flere funksjoner i ett verktøy:
 1. Det fungerer som en formatterer, linter og analysator i én pakke.
-2. Denne enhetlige tilnærmingen eliminerer behovet for å avstemme motstridende regler mellom separate formaterings- og lintingverktøy.sfs
+2. Denne enhetlige tilnærmingen eliminerer behovet for å avstemme motstridende regler mellom separate formaterings- og lintingverktøy.
 
 ## Innebygd TypeScript-støtte
 Biome tilbyr innebygd støtte for TypeScript uten behov for ytterligere plugins eller konfigurasjon.
