@@ -1,6 +1,11 @@
 # Felles SPK kode regler for TypeScript, JSON, JS, JSX, og React
 
 # `@statens-pensjonskasse/biome`
+
+[![Build and Publish](https://github.com/statens-pensjonskasse/biome/actions/workflows/publish.yaml/badge.svg)](https://github.com/statens-pensjonskasse/biome/actions/workflows/publish.yaml)
+[![GitHub Package](https://img.shields.io/github/v/release/statens-pensjonskasse/biome?label=package)](https://github.com/statens-pensjonskasse/biome/pkgs/npm/biome)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 Bibliotek for regler som kan brukes på tvers av applikasjoner i SPK
 
 ## Hvorfor
@@ -72,13 +77,13 @@ Biome gir en mer strømlinjeformet oppsettsprosess:
 ## Enhetlig verktøy
 Biome kombinerer flere funksjoner i ett verktøy:
 1. Det fungerer som en formatterer, linter og analysator i én pakke.
-2. Denne enhetlige tilnærmingen eliminerer behovet for å avstemme motstridende regler mellom separate formaterings- og lintingverktøy.sfs
+2. Denne enhetlige tilnærmingen eliminerer behovet for å avstemme motstridende regler mellom separate formaterings- og lintingverktøy.
 
 ## Innebygd TypeScript-støtte
 Biome tilbyr innebygd støtte for TypeScript uten behov for ytterligere plugins eller konfigurasjon.
 
 ## Moderne funksjoner
-Biome inkluderer noen moderne funksjoner som standard:sfsfsfsfsdfsdf
+Biome inkluderer noen moderne funksjoner som standard:
 1. Det sorterer automatisk imports, en funksjon som ofte krever ytterligere plugins med ESLint.
 2. Biome kan sortere Tailwind CSS-klasser, noe som erstatter behovet for separate Tailwind-spesifikke plugins.
 
@@ -101,6 +106,10 @@ Det har kanskje ikke full funksjonalitetsparitet, bare 97%, eller det omfattende
 
 Noen utviklere har rapportert at det føles ufullstendig på visse områder, med manglende støtte for LESS, SCSS, YAML, GraphQL og noen avanserte funksjoner for import-sortering. 
 
-
 # Overbevist? 
 Gå [hit](./MIGRATION.md) for å sette opp Biome.
+
+## License
+
+MIT License - see [LICENSE](./LICENSE) file for details.
+

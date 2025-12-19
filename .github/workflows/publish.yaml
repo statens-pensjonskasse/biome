@@ -6,15 +6,10 @@ on:
 
 jobs:
   build:
-    uses: statens-pensjonskasse/github-actions-library/.github/workflows/build-library-npm-yarn.yaml@ff884733c06045d6b33f52a62cd44db3dbd2f6ee
+    uses: statens-pensjonskasse/public-actions-library/.github/workflows/build-library-node.yaml@fix/npm-workflows
     permissions:
       contents: write
       packages: write
     secrets: inherit
     with:
-      test-goals: 'run lint'
       node-version: '21'
-      slack-channel: '#frontendstøtte-ci'
-      slack-bot-name: 'Biome'
-      slack-bot-icon: ':mag:'
-

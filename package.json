@@ -11,19 +11,31 @@
     "lint:staged": "biome check --error-on-warnings -no-errors-on-unmatched --staged"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
+    "access": "public"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/statens-pensjonskasse/biome.git"
   },
+  "homepage": "https://github.com/statens-pensjonskasse/biome#readme",
+  "bugs": {
+    "url": "https://github.com/statens-pensjonskasse/biome/issues"
+  },
   "keywords": [
-    "npm",
-    "frontend"
+    "biome",
+    "biomejs",
+    "linter",
+    "formatter",
+    "typescript",
+    "javascript",
+    "react",
+    "jsx",
+    "code-quality",
+    "eslint-alternative",
+    "prettier-alternative"
   ],
   "author": "Eivind Ingebrigtsen <eivind.ingebrigtsen@statens-pensjonskasse.no>",
-  "license": "ICT",
-  "always-auth": true,
+  "license": "MIT",
   "exports": {
     "./config": "./biome.json"
   },
