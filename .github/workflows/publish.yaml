@@ -12,6 +12,4 @@ jobs:
       packages: write
     secrets: inherit
     with:
-      build-script: ''
-      test-script: ''
       node-version: '21'
