@@ -8,12 +8,6 @@
 
 Bibliotek for regler som kan brukes på tvers av applikasjoner i SPK
 
-## Installation
-
-```bash
-npm install --save-dev @statens-pensjonskasse/biome
-```
-
 ## Hvorfor
 1. Forenkle oppsett av nye applikasjoner
 2. Felles grunnlag for kodestil og standarder
