@@ -46,6 +46,6 @@
     "@biomejs/cli-linux-x64": "2.3.11"
   },
   "devDependencies": {
-    "@types/node": "^24.10.4"
+    "@types/node": "^24.10.9"
   }
 }
