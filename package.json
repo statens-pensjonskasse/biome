@@ -40,12 +40,12 @@
     "./config": "./biome.json"
   },
   "dependencies": {
-    "@biomejs/biome": "^2.4.13"
+    "@biomejs/biome": "^2.4.14"
   },
   "optionalDependencies": {
-    "@biomejs/cli-linux-x64": "2.4.13"
+    "@biomejs/cli-linux-x64": "2.4.14"
   },
   "devDependencies": {
-    "@types/node": "^24.12.2"
+    "@types/node": "^24.12.3"
   }
 }
