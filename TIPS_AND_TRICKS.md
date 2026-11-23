@@ -26,7 +26,6 @@
 - Kjør `npm run lint:code` for å fikse alt som er mulig å fikse automatisk.
 - Hvis du føler deg litt tøff og heldig, kjør `npm run lint:code -- --unsafe`.
 
-
 # 🧠 Lyst til å få bedre opplevelse med biome?
 
 1. Lag et strengere regelsett for IDE
