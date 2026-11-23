@@ -58,7 +58,6 @@ npx biome check --changed
 npx biome check --staged
 ```
 
-
 # Hvorfor ikke `eslintrc`?
 
 ## Ytelse
@@ -72,6 +71,7 @@ I praktiske tester har brukere rapportert dramatiske hastighetsforberinger. En u
 ## Forenklet oppsett og konfigurasjon
 
 Biome gir en mer strømlinjeformet oppsettsprosess:
+
 1. Det krever kun installasjon av én avhengighet, noe som erstatter behovet for separate ESLint, Prettier og diverse plugins.
 2. Biome bruker én enkelt konfigurasjonsfil for både formatering og linting, noe som forenkler prosjektoppsettet.
 3. Initialiseringsprosessen er enkel, og krever vanligvis bare to kommandoer: installasjon og initialisering.
@@ -79,6 +79,7 @@ Biome gir en mer strømlinjeformet oppsettsprosess:
 ## Enhetlig verktøy
 
 Biome kombinerer flere funksjoner i ett verktøy:
+
 1. Det fungerer som en formatterer, linter og analysator i én pakke.
 2. Denne enhetlige tilnærmingen eliminerer behovet for å avstemme motstridende regler mellom separate formaterings- og lintingverktøy.
 
@@ -89,21 +90,23 @@ Biome tilbyr innebygd støtte for TypeScript uten behov for ytterligere plugins 
 ## Moderne funksjoner
 
 Biome inkluderer noen moderne funksjoner som standard:
+
 1. Det sorterer automatisk imports, en funksjon som ofte krever ytterligere plugins med ESLint.
 2. Biome kan sortere Tailwind CSS-klasser, noe som erstatter behovet for separate Tailwind-spesifikke plugins.
 
 ## Aktiv utvikling og fellesskapsstøtte
 
 Selv om Biome er nyere enn ESLint, er det under aktiv utvikling:
+
 1. Det kom ut som vinneren av en konkurranse for å lage en raskere JavaScript-formatterer, noe som indikerer dets potensial og interesse i utviklermiljøet.
 2. Prosjektet har et aktivt fellesskap og forbedres kontinuerlig.
 
 ## Brukervennlighet
 
 Mange utviklere rapporterer at Biome er enklere å bruke og konfigurere:
+
 1. Konfigurasjonen beskrives som "superenkel" sammenlignet med det ofte komplekse oppsettet av ESLint og Prettier.
 2. Biomes regler er tydelig dokumentert og lett tilgjengelige, noe som gjør det enklere å forstå hva som anvendes på koden din.
-
 
 # Hvorfor ikke bruke `Biome`?
 

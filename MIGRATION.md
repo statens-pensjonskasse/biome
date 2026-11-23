@@ -12,16 +12,17 @@ Dette gjør at vi kan minimere risikoen og konsekvensene med å gjøre endringer
 3. [@statens-pensjonskasse/stylelint-less](https://git.spk.no/projects/SHIPIT/repos/stylelint-less/browse)
 4. [@statens-pensjonskasse/stylelint-scss](https://git.spk.no/projects/SHIPIT/repos/stylelint-scss/browse)
 
-
 ## Migrere et prosjekt til Biome:
 
 I rot av prosjektet på `main`/`master` branch kjør:
+
 ```
 npx @statens-pensjonskasse/standardize
 ```
 Følg instruksene i terminalen, så har du basis oppsettet installert.
 
 **Verktøyet gjør følgende:**
+
 1. Installerer `@statens-pensjonskasse/biome` i prosjektet
 2. Kjører en `biome check` med alle reglene skrudd på
 3. Fanger alle regler som feiler `biome check` og legger dem i `biome.json` som `"off"`
@@ -36,6 +37,7 @@ Følg instruksene i terminalen, så har du basis oppsettet installert.
 12. Spytter ut alle endringene med git status: dette skal hovedsaklig være filer som nå blir formatert, filer som er tatt bort, nye konfigurasjonsfiler og nye dependendencies for biome og stylelint
 
 Etter installasjonen kan du kjøre:
+
 ```bash
 npm run format # Formatterer koden
 npm run format:code # Formatterer koden, uten stylesheets
@@ -67,7 +69,6 @@ Med prinsippet om at LINT config skal passerer koden som er i produksjon i dag, 
 2. Gå gjennom alle prosjekter og rette opp de regel-brudne linjene som ikke er i Biome-konfigurasjonen
    - a. Enten ta regel for regel som gir mest verdi
      - b. Legg inn en streng versjon i pipeline, men bare lint endringene som er gjort.
-
 
 # 🚨 Kjente feil i migrasjonsscriptet
 
