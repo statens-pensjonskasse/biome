@@ -34,9 +34,6 @@
     "enabled": true,
     "rules": {
       "preset": "recommended",
-      "nursery": {
-        "useTailwindSortedClasses": "warn"
-      },
       "correctness": {
         "noUnusedImports": "error",
         "noUnusedVariables": "error"
